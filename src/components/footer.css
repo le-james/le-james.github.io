@@ -1,0 +1,10 @@
+.container {
+    position: absolute;
+    bottom: 0;
+    margin: 1.5em;
+}
+
+.contact {
+    color: white;
+    padding: 0.5em;
+}

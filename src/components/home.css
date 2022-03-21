@@ -1,0 +1,37 @@
+.slideContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgb(0, 0, 0) 20%, rgb(63, 6, 50) 75%);
+}
+.slideGrid {
+    font-family: "Verdana";
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    justify-items: center;
+}
+.slide {
+    grid-row: 2/3;
+}
+.slideNav {
+    position: relative;
+    text-align: center;
+}
+
+.text {
+    user-select: none;
+    text-align: center;
+    font-size: 250%;
+    color: white;
+}
+
+.letter, .letterContainer {
+    display: inline-block;
+    padding: 0.1em;
+}
+
+.space {
+    padding-right: 0.5em;
+}
