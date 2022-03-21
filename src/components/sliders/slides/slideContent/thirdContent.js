@@ -13,6 +13,7 @@ function thirdContent({ wordVariants, letterVariants }) {
                 <motion.div variants={letterVariants} className="letter"> e </motion.div>
                 <motion.div variants={letterVariants} className="letter"> n </motion.div>
                 <motion.div variants={letterVariants} className="letter"> t </motion.div>
+                <motion.div variants={letterVariants} className="letter"> l </motion.div>
                 <motion.div variants={letterVariants} className="letter space"> y </motion.div>
             </div>
 
@@ -24,7 +25,7 @@ function thirdContent({ wordVariants, letterVariants }) {
             <div className="letterContainer">
                 <motion.div variants={letterVariants} className="letter"> U </motion.div>
                 <motion.div variants={letterVariants} className="letter"> S </motion.div>
-                <motion.div variants={letterVariants} className="letter space"> C, </motion.div>
+                <motion.div variants={letterVariants} className="letter space"> C </motion.div>
             </div>
 
             <div className="letterContainer">
