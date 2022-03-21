@@ -5,7 +5,7 @@
     background: linear-gradient(0deg, rgb(0, 0, 0) 20%, rgb(63, 6, 50) 75%);
 }
 .slideGrid {
-    font-family: "Verdana";
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 100vw;
     height: 100vh;
     display: grid;
