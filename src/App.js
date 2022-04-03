@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import Home from "./components/Home";
 import "./App.css";
+import { Route, Switch, useLocation } from "react-router-dom";
+
+//project component
+import Projects from "./components/Projects";
 
 const App = () => {
 
@@ -33,10 +37,13 @@ const App = () => {
     }
   }
 
+let location = useLocation()
+
   return (
-    <React.Fragment>
-      <Home randRGB={randRGB} randRGBgenerator={randRGBgenerator} randRGBReset={randRGBReset}/>
-    </React.Fragment>
+    <Switch key={location.key} location={location}>
+      <Route path="/" exact render={(props) => ( <Home {...props} randRGB={randRGB} randRGBgenerator={randRGBgenerator} randRGBReset={randRGBReset}/> )} />
+      <Route path="/projects" component={Projects}/>
+    </Switch>
   )
 }
 
