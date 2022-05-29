@@ -14,30 +14,31 @@ const Footer = ({ randRGB, randRGBgenerator, randRGBReset }) => {
 
     const githubLink = 'https://github.com/le-james?tab=repositories';
     const email = "mailto:jle54218@usc.edu"
-    const resumeLink = "https://resume.io/r/P93uVaYcE"
+    // const resumeLink = "https://resume.io/r/P93uVaYcE"
+    const resumeLink = "https://drive.google.com/file/d/1Tx-HEtr4ujHTexdrH2ENrta2K64_xPod/view?usp=sharing"
 
     return (
         <motion.div className='footer-container' variants={containerVariants} initial="hidden" animate="visible">
             <a href={githubLink} target="_blank"> 
-                <motion.div className="contact" variants={iconVariant} onHoverStart={() => randRGBgenerator()} onHoverEnd={() => randRGBReset()} whileHover="hover" custom={randRGB}>
+                <motion.div className="icon" variants={iconVariant} onHoverStart={() => randRGBgenerator()} onHoverEnd={() => randRGBReset()} whileHover="hover" custom={randRGB}>
                     <AiFillGithub size="2em" /> 
                 </motion.div>
             </a>
 
             <a href={email} target="_blank"> 
-                <motion.div className='contact' variants={iconVariant} onHoverStart={() => randRGBgenerator()} onHoverEnd={() => randRGBReset()} whileHover="hover" custom={randRGB}>
+                <motion.div className='icon' variants={iconVariant} onHoverStart={() => randRGBgenerator()} onHoverEnd={() => randRGBReset()} whileHover="hover" custom={randRGB}>
                     <AiOutlineMail size="2em" />
                 </motion.div>
             </a>
             
             <a href={resumeLink} target="_blank"> 
-                <motion.div className='contact' variants={iconVariant} onHoverStart={() => randRGBgenerator()} onHoverEnd={() => randRGBReset()} whileHover="hover" custom={randRGB}>
+                <motion.div className='icon' variants={iconVariant} onHoverStart={() => randRGBgenerator()} onHoverEnd={() => randRGBReset()} whileHover="hover" custom={randRGB}>
                     <IoIosPaper size="2em" />
                 </motion.div>
             </a>
 
             <Link to="/projects">
-                <motion.div className='contact' variants={iconVariant} onHoverStart={() => randRGBgenerator()} onHoverEnd={() => randRGBReset()} whileHover="hover" custom={randRGB}>
+                <motion.div className='icon' variants={iconVariant} onHoverStart={() => randRGBgenerator()} onHoverEnd={() => randRGBReset()} whileHover="hover" custom={randRGB}>
                     <BsTools size="1.9em" />
                 </motion.div>
             </Link>
@@ -66,10 +67,10 @@ const iconVariant = {
     },
     hover: (randRGB) => {
         return {
-            y: [5, -5],
+            y: [1, -1],
             color: `rgb(${randRGB.red}, ${randRGB.green}, ${randRGB.blue})`,
             transition: {
-                duration: 0.75,
+                duration: 0.3,
                 yoyo: Infinity,
                 ease: "easeInOut"
             }

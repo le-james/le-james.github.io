@@ -13,10 +13,35 @@ function Projects() {
                 <AiFillHome size="1.9em" />
             </Link>
             <div class="project-container">
+            <div class="card">
+                    <div class="card__body">
+                        <h2>Spacecraft Rendezvous, Proximity Operations and Docking (RPOD) Guidance</h2>
+                        <p>
+                            Developing a simulation of RPOD of a spacecraft using the General Multi-pulse 
+                            Glideslope Transfer in MATLAB.
+                        </p>
+                        <p>
+                            The General Multi-pulse Glideslope Transfer is based on the Clohessy-Whiltshire
+                            Equations
+                        </p>
+                        <ul>
+                            <li>
+                                <a href="https://github.com/le-james/general-glideslope-spacecraft-guidance" 
+                                target="_blank"> 
+                                    View Project
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card__footer">
+                        <div class="date">
+                            <h5>2022 - Present</h5>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="card">
                     <div class="card__body">
-                        <span class="tag tag-red">SERC Project</span>
                         <h2>3 Degrees of Freedom Small Satellite Testbed</h2>
                         <p>
                             Developing the navigation, controls and software architecture using ROS 2 for a robot that 
@@ -36,14 +61,13 @@ function Projects() {
                     </div>
                     <div class="card__footer">
                         <div class="date">
-                            <h5>2020 - Present</h5>
+                            <h5>2021 - Present</h5>
                         </div>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="card__body">
-                        <span class="tag tag-red">SERC Project</span>
                         <h2>CLING-ERS</h2>
                         <p>
                             New technology for spacecraft Rendezvous Proximity Operations and Docking (RPOD)
@@ -52,14 +76,13 @@ function Projects() {
                     </div>
                     <div class="card__footer">
                         <div class="date">
-                            <h5>2020 - Present</h5>
+                            <h5>2021 - Present</h5>
                         </div>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="card__body">
-                        <span class="tag tag-blue">Personal Project</span>
                         <h2>Differential Drive Robot (DDR) Trajectory Optimization</h2>
                         <p>Learned how to use IPOPT (Nonlinear optimization software) in Julia programming language</p>
                         <ul>
@@ -82,7 +105,6 @@ function Projects() {
 
                 <div class="card">
                     <div class="card__body">
-                        <span class="tag tag-blue">Personal Project</span>
                         <h2>3D Printer Project</h2>
                         <p>Built a 3D printer from stratch</p>
                         <ul>
@@ -109,7 +131,6 @@ function Projects() {
 
                 <div class="card">
                     <div class="card__body">
-                        <span class="tag tag-brown">Undergraduate Project</span>
                         <h2>Design and Development of a Smart Distributed Clean Drinking Water System</h2>
                         <p>Capstone Team Project</p>
                         <ul>
@@ -133,7 +154,6 @@ function Projects() {
 
                 <div class="card">
                     <div class="card__body">
-                        <span class="tag tag-brown">Undergraduate Project</span>
                         <h2>Programmable Logic Controller (PLC) Box Sorting System</h2>
                         <p>Industrial Automation Course Project</p>
                         <ul>

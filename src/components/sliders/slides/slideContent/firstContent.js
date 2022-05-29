@@ -13,7 +13,7 @@ function firstContent({ wordVariants, letterVariants }) {
             </div>
 
             <div className="letterContainer">
-                <motion.div variants={letterVariants} className="letter"> T </motion.div>
+                <motion.div variants={letterVariants} className="letter"> t </motion.div>
                 <motion.div variants={letterVariants} className="letter"> h </motion.div>
                 <motion.div variants={letterVariants} className="letter"> e </motion.div>
                 <motion.div variants={letterVariants} className="letter"> r </motion.div>

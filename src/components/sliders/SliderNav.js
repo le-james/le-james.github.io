@@ -61,10 +61,10 @@ const navVariant = {
             }                           
         } else {
             return {
-                y: [5, -5],
+                y: [2.5, -2.5],
                 color: `rgb(${arr[2].red}, ${arr[2].green}, ${arr[2].blue})`,
                 transition: {
-                    duration: 0.75,
+                    duration: 0.3,
                     yoyo: Infinity,
                     ease: "easeInOut"
                 }
