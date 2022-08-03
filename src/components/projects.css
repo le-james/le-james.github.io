@@ -4,18 +4,39 @@
   margin: 0;
 }
 
-.projects-page {
-  font-family: "Quicksand", sans-serif;
-  margin-top: 1em;
-  display: grid;
-  place-items: center;
-  height: 100%;
-  background: linear-gradient(0deg, rgb(0, 0, 0) 20%, rgb(63, 6, 50) 75%);
+.projects {
+    font-family: "Quicksand", sans-serif;
+    display: grid;
+    grid-template-rows: 3em auto 3em;
+    /* place-items: center; */
+    height: 100vh;
+    background: linear-gradient(0deg, rgb(0, 0, 0) 20%, rgb(63, 6, 50) 75%);
+    overflow-y: scroll;
+}
+
+a {
+    color: white;
+    margin-top: 1.5em;
+    margin-left: 1.3em;
+    width: min-content;
+    text-decoration: none;
+}
+
+a:hover { COLOR: #a8bbbf; TEXT-DECORATION: none; font-weight: none }
+
+.header_icon{
+    position: fixed;
+}
+
+.reg_link {
+    color: white;
+    margin: 0;
 }
 
 .project-container {
     display: flex;
     flex-wrap: wrap;
+    justify-self: center;
     justify-content: center;
     max-width: 1200px;
     margin-block: 2rem;
@@ -26,25 +47,39 @@
     display: flex;
     flex-direction: column;
     width: clamp(20rem, calc(20rem + 2vw), 22rem);
+    height: min-content;
     overflow: hidden;
     border-radius: 1em;
-    background: rgb(72, 72, 72);
+    background: #413F42;
     color: white;
+}
+
+.in-card {
+    width: 60%;
+}
+
+img, video {
+    max-width: 100%;
+    border-radius: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .card__body {
     padding: 1rem;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     gap: .5rem;
 }
 
-a {
-    color: white;
+h2 {
+    margin-top: 0.5em;
 }
 
+
 p, ul {
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 ul {
@@ -62,33 +97,15 @@ li {
     font-size: .75rem;
 }
 
-.tag {
-    font-size: 1em;
-}
-
-.tag-blue {
-    background: linear-gradient(to bottom, #2F80ED, #56CCF2);
-}
-
-.tag-brown {
-    background: linear-gradient(to bottom, #FFD194, #D1913C);
-}
-
-.tag-red {
-    background: linear-gradient(to bottom, #ef473a, #cb2d3e);
-}
-
-.card__body h4 {
-    font-size: 1.5rem;
-    text-transform: capitalize;
-}
-
 .card__footer {
-    padding: 1rem;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
     margin-top: auto;
-}
-
-.date {
     color: rgb(255, 255, 255);
     font-size: 1.2em;
+}
+
+.project_footer{
+    color: white;
 }

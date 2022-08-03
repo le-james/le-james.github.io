@@ -3,70 +3,115 @@ import { Link } from 'react-router-dom';
 
 import { AiFillHome } from "react-icons/ai"
 
+// cover images
+import od_cover from "./project_images/od/ekf_gps.png"
+import rpod_cover from "./project_images/rpod/inbound_glideslope.png"
+import testbed_cover from "./project_images/testbed/testbed.jpg"
+import ddr_cover from "./project_images/ddr/simple-traj-obs-avoidance.gif"
+import printer_cover from "./project_images/3d_printer/3d-printer.gif"
+// import plc_cover from "./project_images/plc/plc.gif"
+
 //CSS
 import "./projects.css"
 
 function Projects() {
     return (
-        <div class="projects-page">
+        <div class="projects">
             <Link to="/">
-                <AiFillHome size="1.9em" />
+                <AiFillHome class="header_icon" size="2em" />
             </Link>
             <div class="project-container">
             <div class="card">
                     <div class="card__body">
-                        <h2>Spacecraft Rendezvous, Proximity Operations and Docking (RPOD) Guidance</h2>
+                        <img src={od_cover} alt="orbits around earth"/>
+                        <h2>Orbit Determination</h2>
                         <p>
-                            Developing a simulation of RPOD of a spacecraft using the General Multi-pulse 
-                            Glideslope Transfer in MATLAB.
+                            Nonlinear state estimation of a spacecraft in orbit using an Extended Kalman Filter
                         </p>
-                        <p>
-                            The General Multi-pulse Glideslope Transfer is based on the Clohessy-Whiltshire
-                            Equations
-                        </p>
-                        <ul>
-                            <li>
-                                <a href="https://github.com/le-james/general-glideslope-spacecraft-guidance" 
-                                target="_blank"> 
-                                    View Project
-                                </a>
-                            </li>
-                        </ul>
                     </div>
                     <div class="card__footer">
-                        <div class="date">
-                            <h5>2022 - Present</h5>
-                        </div>
+                        <Link className='reg_link' to="/od_project">
+                            <hr/>
+                            <h5>Read more</h5>
+                        </Link>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="card__body">
-                        <h2>3 Degrees of Freedom Small Satellite Testbed</h2>
+                        <img src={rpod_cover} alt="plot of waypoints"/>
+                        <h2>Spacecraft Rendezvous, Proximity Operations and Docking (RPOD) Guidance</h2>
                         <p>
-                            Developing the navigation, controls and software architecture using ROS 2 for a robot that 
-                            maneuvers on an air bearing platform (Think of air hockey but the puck is a robot), sensibly 
-                            called a Floatbot.
+                            Simulation of RPOD based on the Clohessy-Whiltshire Equations.
                         </p>
-                        <ul>
-                            <li>
-                                Using Marvelmind Indoor GPS and MPU6050 for localization
-                            </li>
-                            <li>
-                                <a href="https://github.com/le-james/floatbot" target="_blank"> 
-                                    View Project
-                                </a>
-                            </li>
-                        </ul>
                     </div>
                     <div class="card__footer">
-                        <div class="date">
-                            <h5>2021 - Present</h5>
-                        </div>
+                        <Link className='reg_link' to="/rpod_project">
+                            <hr/>
+                            <h5>Read more</h5>
+                        </Link>
                     </div>
                 </div>
 
                 <div class="card">
+                    <div class="card__body">
+                        <img src={testbed_cover} alt="orbits around earth"/>
+                        <h2>3 Degrees of Freedom Small Satellite Testbed</h2>
+                        <p>
+                            Developing the navigation, controls and software architecture.
+                        </p>
+                    </div>
+                    <div class="card__footer">
+                        <Link className='reg_link' to="/testbed_project">
+                            <hr/>
+                            <h5>Read more</h5>
+                        </Link>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="card__body">
+                        <img src={ddr_cover} alt="orbits around earth"/>
+                        <h2>Differential Drive Robot (DDR) Trajectory Optimization</h2>
+                        <p>Learned how to use IPOPT (Nonlinear optimization software) in Julia programming language</p>
+                    </div>
+                    <div class="card__footer">
+                        <Link className='reg_link' to="/ddr_project">
+                            <hr/>
+                            <h5>Read more</h5>
+                        </Link>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__body">
+                        <img src={printer_cover} alt="orbits around earth"/>
+                        <h2>3D Printer Project</h2>
+                        <p>Built a 3D printer from stratch</p>
+                    </div>
+                    <div class="card__footer">
+                        <Link className='reg_link' to="/printer_project">
+                            <hr/>
+                            <h5>Read more</h5>
+                        </Link>
+                    </div>
+                </div>
+
+                {/* <div class="card">
+                    <div class="card__body">
+                        <img src={plc_cover} alt="orbits around earth"/>
+                        <h2>Programmable Logic Controller (PLC) Box Sorting System</h2>
+                        <p>Industrial Automation Course Project</p>
+                    </div>
+                    <div class="card__footer">
+                        <Link to="/plc_project">
+                            <h5>Read more</h5>
+                        </Link>
+                    </div>
+                </div> */}
+
+                {/* <div class="card">
                     <div class="card__body">
                         <h2>CLING-ERS</h2>
                         <p>
@@ -79,57 +124,9 @@ function Projects() {
                             <h5>2021 - Present</h5>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
-                <div class="card">
-                    <div class="card__body">
-                        <h2>Differential Drive Robot (DDR) Trajectory Optimization</h2>
-                        <p>Learned how to use IPOPT (Nonlinear optimization software) in Julia programming language</p>
-                        <ul>
-                            <li>
-                                Used the kinematics of a DDR to generate a simple trajectory that avoids a known obstacle
-                            </li>
-                            <li>
-                                <a href="https://github.com/le-james/differential-drive-robot" target="_blank"> 
-                                    View Project
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="card__footer">
-                        <div class="date">
-                            <h5>2021</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card__body">
-                        <h2>3D Printer Project</h2>
-                        <p>Built a 3D printer from stratch</p>
-                        <ul>
-                            <li>
-                                Designed parts for the custom 3D printer in Siemens NX 10 and 3D printed them (Using a 3D printer to build a 3D printer) 
-                            </li>
-                            <li>
-                                Assembled the frame, motors and electronics together 
-                            </li>
-                            <li>
-                                Sourced components, hardware and electronics from various suppliers
-                            </li>
-                            <li>
-                                Documented purchases in a bill of materials
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="card__footer">
-                        <div class="date">
-                            <h5>2017 - 2020</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
+                {/* <div class="card">
                     <div class="card__body">
                         <h2>Design and Development of a Smart Distributed Clean Drinking Water System</h2>
                         <p>Capstone Team Project</p>
@@ -150,29 +147,7 @@ function Projects() {
                             <h5>2019 - 2020</h5>
                         </div>
                     </div>
-                </div>
-
-                <div class="card">
-                    <div class="card__body">
-                        <h2>Programmable Logic Controller (PLC) Box Sorting System</h2>
-                        <p>Industrial Automation Course Project</p>
-                        <ul>
-                            <li>
-                                <strong>Goal: </strong> Develop a conveyor box sorting system in FactoryIO that 
-                                flips incoming boxes 180 degrees using a Siemens S7-1200 PLC
-                            </li>
-                            <li>
-                                <strong>End result: </strong> Programmed the PLC using ladder logic to flip the boxes 
-                                180 degrees and measures down the line to correct boxes that only flipped 90 degrees
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="card__footer">
-                        <div class="date">
-                            <h5>2020</h5>
-                        </div>
-                    </div>
-                </div>
+                </div> */}
 
             </div>
         </div>

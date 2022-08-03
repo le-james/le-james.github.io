@@ -1,7 +1,13 @@
 .footer-container {
-    position: absolute;
+    /* position: absolute;
     bottom: 0;
-    margin: 1.5em;
+    margin: 1.5em; */
+
+    position: fixed;
+    display: flex;
+    left: 50%;
+    bottom: 0px;
+    transform: translate(-50%, -25%);
 }
 
 .icon {

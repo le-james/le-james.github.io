@@ -6,36 +6,37 @@ import { Link } from 'react-router-dom';
 import './footer.css'
 
 // contact icons
-import { AiFillGithub, AiOutlineMail } from "react-icons/ai";
-import { IoIosPaper } from "react-icons/io"
+// import { AiFillGithub, AiOutlineMail } from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
+// import { IoIosPaper } from "react-icons/io"
 import { BsTools } from "react-icons/bs"
 
 const Footer = ({ randRGB, randRGBgenerator, randRGBReset }) => {
 
     const githubLink = 'https://github.com/le-james?tab=repositories';
-    const email = "mailto:jle54218@usc.edu"
+    // const email = "mailto:jle54218@usc.edu"
     // const resumeLink = "https://resume.io/r/P93uVaYcE"
-    const resumeLink = "https://drive.google.com/file/d/1Tx-HEtr4ujHTexdrH2ENrta2K64_xPod/view?usp=sharing"
+    // const resumeLink = "https://drive.google.com/file/d/1Tx-HEtr4ujHTexdrH2ENrta2K64_xPod/view?usp=sharing"
 
     return (
         <motion.div className='footer-container' variants={containerVariants} initial="hidden" animate="visible">
-            <a href={githubLink} target="_blank"> 
+            <a href={githubLink} target="_blank" rel="noopener noreferrer"> 
                 <motion.div className="icon" variants={iconVariant} onHoverStart={() => randRGBgenerator()} onHoverEnd={() => randRGBReset()} whileHover="hover" custom={randRGB}>
                     <AiFillGithub size="2em" /> 
                 </motion.div>
             </a>
 
-            <a href={email} target="_blank"> 
+            {/* <a href={email} target="_blank" rel="noopener noreferrer"> 
                 <motion.div className='icon' variants={iconVariant} onHoverStart={() => randRGBgenerator()} onHoverEnd={() => randRGBReset()} whileHover="hover" custom={randRGB}>
                     <AiOutlineMail size="2em" />
                 </motion.div>
-            </a>
+            </a> */}
             
-            <a href={resumeLink} target="_blank"> 
+            {/* <a href={resumeLink} target="_blank" rel="noopener noreferrer"> 
                 <motion.div className='icon' variants={iconVariant} onHoverStart={() => randRGBgenerator()} onHoverEnd={() => randRGBReset()} whileHover="hover" custom={randRGB}>
                     <IoIosPaper size="2em" />
                 </motion.div>
-            </a>
+            </a> */}
 
             <Link to="/projects">
                 <motion.div className='icon' variants={iconVariant} onHoverStart={() => randRGBgenerator()} onHoverEnd={() => randRGBReset()} whileHover="hover" custom={randRGB}>
