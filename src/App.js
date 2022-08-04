@@ -53,8 +53,8 @@ const App = () => {
 let location = useLocation()
 
   return (
-    <Router basename="/">
-      <Switch key={location.key} location={location}>
+    <Switch key={location.key} location={location}>
+        <Router basename="/"/>
         <Route path="/" exact render={(props) => ( <Home {...props} randRGB={randRGB} randRGBgenerator={randRGBgenerator} randRGBReset={randRGBReset}/> )} />
         <Route path="/projects" component={Projects}/>
 
@@ -65,7 +65,6 @@ let location = useLocation()
         <Route path="/printer_project" component={Under_construction}/>
         {/* <Route path="/plc_project" component={PLC_project}/> */}
       </Switch>
-    </Router>
   )
 }
 
