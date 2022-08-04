@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Home from "./components/Home";
 import "./App.css";
-import { Route, Switch, useLocation } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, useLocation } from "react-router-dom";
 
 //project component
 import Projects from "./components/Projects";
@@ -53,17 +53,19 @@ const App = () => {
 let location = useLocation()
 
   return (
-    <Switch key={location.key} location={location}>
-      <Route path="/" exact render={(props) => ( <Home {...props} randRGB={randRGB} randRGBgenerator={randRGBgenerator} randRGBReset={randRGBReset}/> )} />
-      <Route path="/projects" component={Projects}/>
+    <Router basename="/le-james.github.io">
+      <Switch key={location.key} location={location}>
+        <Route path="/" exact render={(props) => ( <Home {...props} randRGB={randRGB} randRGBgenerator={randRGBgenerator} randRGBReset={randRGBReset}/> )} />
+        <Route path="/projects" component={Projects}/>
 
-      <Route path="/od_project" component={OD_project}/>
-      <Route path="/rpod_project" component={Under_construction}/>
-      <Route path="/testbed_project" component={Under_construction}/>
-      <Route path="/ddr_project" component={Under_construction}/>
-      <Route path="/printer_project" component={Under_construction}/>
-      {/* <Route path="/plc_project" component={PLC_project}/> */}
-    </Switch>
+        <Route path="/od_project" component={OD_project}/>
+        <Route path="/rpod_project" component={Under_construction}/>
+        <Route path="/testbed_project" component={Under_construction}/>
+        <Route path="/ddr_project" component={Under_construction}/>
+        <Route path="/printer_project" component={Under_construction}/>
+        {/* <Route path="/plc_project" component={PLC_project}/> */}
+      </Switch>
+    </Router>
   )
 }
 
