@@ -53,7 +53,7 @@ const App = () => {
 let location = useLocation()
 
   return (
-    <Router basename="/le-james.github.io">
+    <Router basename="/">
       <Switch key={location.key} location={location}>
         <Route path="/" exact render={(props) => ( <Home {...props} randRGB={randRGB} randRGBgenerator={randRGBgenerator} randRGBReset={randRGBReset}/> )} />
         <Route path="/projects" component={Projects}/>
