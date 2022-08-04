@@ -23,8 +23,8 @@ function Under_construction() {
                         <img src={keep_calm_cover} alt="cat with space helmet"/>
 
                         <br/>
-                        <a className='reg_link' href={githubLink} target="_blank" rel="noopener noreferrer">
                         <hr/>
+                        <a className='reg_link' href={githubLink} target="_blank" rel="noopener noreferrer">
                             GitHub Repo
                         </a>
 

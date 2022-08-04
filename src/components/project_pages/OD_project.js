@@ -26,14 +26,14 @@ function OD_project() {
                 <AiOutlineRollback class="header_icon" size="2em" />
             </Link>
             <div class="project-container">
-                <div class="card in-card">
+                <div class="in-card">
                     <div class="card__body">
-                        <img src={od_cover} alt="orbits around earth"/>
+                        <img src={od_cover} style={{width: "75%"}} alt="orbits around earth"/>
 
                         <br/>
-                        <a className='reg_link' href={githubLink} target="_blank" rel="noopener noreferrer">
                         <hr/>
-                            Project GitHub page
+                        <a className='reg_link' href={githubLink} target="_blank" rel="noopener noreferrer">
+                            View GitHub Repo
                         </a>
 
                         <h2>Orbit Determination</h2>
@@ -273,7 +273,7 @@ function OD_project() {
                             </li>
                         </ul>
                         <br/>
-                        <img src={full_ekf} alt="orbits around Earth"/>
+                        <img src={full_ekf} style={{width: "65%"}} alt="orbits around Earth"/>
                         <br/>
                         <h2>Conclusion</h2>
                         <br/>
@@ -294,7 +294,7 @@ function OD_project() {
                             it converges, so why use the GPS measurements every 10 mins?
                         </p>
                         <br/>
-                        <img src={ekf_range_top} alt="top view of Earth with orbit trajectories"/>
+                        <img src={ekf_range_top} style={{width: "65%"}} alt="top view of Earth with orbit trajectories"/>
                         <br/>
                         <p>
                             Looking from the side, the range measurement only captures the shape of the

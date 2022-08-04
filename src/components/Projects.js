@@ -8,7 +8,7 @@ import od_cover from "./project_images/od/ekf_gps.png"
 import rpod_cover from "./project_images/rpod/inbound_glideslope.png"
 import testbed_cover from "./project_images/testbed/testbed.jpg"
 import ddr_cover from "./project_images/ddr/simple-traj-obs-avoidance.gif"
-import printer_cover from "./project_images/3d_printer/3d-printer.gif"
+import printer_cover from "./project_images/3d_printer/3d-printer_r2.gif"
 // import plc_cover from "./project_images/plc/plc.gif"
 
 //CSS
@@ -30,8 +30,8 @@ function Projects() {
                         </p>
                     </div>
                     <div class="card__footer">
-                        <Link className='reg_link' to="/od_project">
-                            <hr/>
+                        <hr/>
+                        <Link className='router_link' to="/od_project">
                             <h5>Read more</h5>
                         </Link>
                     </div>
@@ -46,8 +46,8 @@ function Projects() {
                         </p>
                     </div>
                     <div class="card__footer">
-                        <Link className='reg_link' to="/rpod_project">
-                            <hr/>
+                        <hr/>
+                        <Link className='router_link' to="/rpod_project">
                             <h5>Read more</h5>
                         </Link>
                     </div>
@@ -62,8 +62,8 @@ function Projects() {
                         </p>
                     </div>
                     <div class="card__footer">
-                        <Link className='reg_link' to="/testbed_project">
-                            <hr/>
+                        <hr/>
+                        <Link className='router_link' to="/testbed_project">
                             <h5>Read more</h5>
                         </Link>
                     </div>
@@ -77,8 +77,8 @@ function Projects() {
                         <p>Learned how to use IPOPT (Nonlinear optimization software) in Julia programming language</p>
                     </div>
                     <div class="card__footer">
-                        <Link className='reg_link' to="/ddr_project">
-                            <hr/>
+                        <hr/>
+                        <Link className='router_link' to="/ddr_project">
                             <h5>Read more</h5>
                         </Link>
                     </div>
@@ -91,8 +91,8 @@ function Projects() {
                         <p>Built a 3D printer from stratch</p>
                     </div>
                     <div class="card__footer">
-                        <Link className='reg_link' to="/printer_project">
-                            <hr/>
+                        <hr/>
+                        <Link className='router_link' to="/printer_project">
                             <h5>Read more</h5>
                         </Link>
                     </div>

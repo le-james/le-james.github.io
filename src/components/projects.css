@@ -5,13 +5,13 @@
 }
 
 .projects {
-    font-family: "Quicksand", sans-serif;
+    /* font-family: "Quicksand", sans-serif; */
     display: grid;
     grid-template-rows: 3em auto 3em;
     /* place-items: center; */
     height: 100vh;
     background: linear-gradient(0deg, rgb(0, 0, 0) 20%, rgb(63, 6, 50) 75%);
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 a {
@@ -20,6 +20,8 @@ a {
     margin-left: 1.3em;
     width: min-content;
     text-decoration: none;
+    display: inline-block;
+    width: fit-content;
 }
 
 a:hover { COLOR: #a8bbbf; TEXT-DECORATION: none; font-weight: none }
@@ -28,8 +30,7 @@ a:hover { COLOR: #a8bbbf; TEXT-DECORATION: none; font-weight: none }
     position: fixed;
 }
 
-.reg_link {
-    color: white;
+.reg_link, .router_link {
     margin: 0;
 }
 
@@ -55,7 +56,8 @@ a:hover { COLOR: #a8bbbf; TEXT-DECORATION: none; font-weight: none }
 }
 
 .in-card {
-    width: 60%;
+    /* width: 80%; */
+    color: white;
 }
 
 img, video {
