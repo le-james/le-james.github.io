@@ -41,12 +41,12 @@ const App = () => {
     }
   }
 
-  //RESET RGB
+  //RESET RGB ***************************** DOESNT WORK - footer.js set white manually in iconVariant
   var randRGBReset = (toggle) => {
     if (toggle === 1) {
     
     } else {
-      setRandRGB({ red: 255, green: 255, blue: 255 })
+      // setRandRGB({ red: 255, green: 255, blue: 255 })
     }
   }
 

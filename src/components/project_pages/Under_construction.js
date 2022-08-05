@@ -18,14 +18,14 @@ function Under_construction() {
                 <AiOutlineRollback class="header_icon" size="2em" />
             </Link>
             <div class="project-container">
-                <div class="card in-card">
+                <div class="in-card">
                     <div class="card__body">
                         <img src={keep_calm_cover} alt="cat with space helmet"/>
 
                         <br/>
                         <hr/>
                         <a className='reg_link' href={githubLink} target="_blank" rel="noopener noreferrer">
-                            GitHub Repo
+                            View GitHub Repo
                         </a>
 
                         <h2>UNDER CONSTRUCTION</h2>

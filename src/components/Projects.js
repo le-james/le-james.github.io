@@ -17,9 +17,8 @@ import "./projects.css"
 function Projects() {
     return (
         <div class="projects">
-            <Link to="/">
-                <AiFillHome class="header_icon" size="2em" />
-            </Link>
+            <Link to="/"> {/* <AiFillHome class="header_icon" size="2em" /> */}HOME</Link>
+
             <div class="project-container">
             <div class="card">
                     <div class="card__body">

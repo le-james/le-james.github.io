@@ -22,10 +22,18 @@ const Footer = ({ randRGB, randRGBgenerator, randRGBReset }) => {
         <motion.div className='footer-container' variants={containerVariants} initial="hidden" animate="visible">
             <a href={githubLink} target="_blank" rel="noopener noreferrer"> 
                 <motion.div className="icon" variants={iconVariant} onHoverStart={() => randRGBgenerator()} onHoverEnd={() => randRGBReset()} whileHover="hover" custom={randRGB}>
-                    <AiFillGithub size="2em" /> 
+                    {/* <AiFillGithub size="2em" /> */}
+                    GITHUB
                 </motion.div>
             </a>
 
+            <Link to="/projects">
+                <motion.div className='icon' variants={iconVariant} onHoverStart={() => randRGBgenerator()} onHoverEnd={() => randRGBReset()} whileHover="hover" custom={randRGB}>
+                    {/* <BsTools size="1.9em" /> */}
+                    PROJECTS
+                </motion.div>
+            </Link>
+            
             {/* <a href={email} target="_blank" rel="noopener noreferrer"> 
                 <motion.div className='icon' variants={iconVariant} onHoverStart={() => randRGBgenerator()} onHoverEnd={() => randRGBReset()} whileHover="hover" custom={randRGB}>
                     <AiOutlineMail size="2em" />
@@ -38,11 +46,6 @@ const Footer = ({ randRGB, randRGBgenerator, randRGBReset }) => {
                 </motion.div>
             </a> */}
 
-            <Link to="/projects">
-                <motion.div className='icon' variants={iconVariant} onHoverStart={() => randRGBgenerator()} onHoverEnd={() => randRGBReset()} whileHover="hover" custom={randRGB}>
-                    <BsTools size="1.9em" />
-                </motion.div>
-            </Link>
         </motion.div>
     )
 }
@@ -65,6 +68,7 @@ const iconVariant = {
     },
     visible: {
         opacity: 1,
+        color: `rgb(255, 255, 255)`
     },
     hover: (randRGB) => {
         return {

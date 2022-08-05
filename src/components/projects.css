@@ -7,7 +7,7 @@
 .projects {
     /* font-family: "Quicksand", sans-serif; */
     display: grid;
-    grid-template-rows: 3em auto 3em;
+    /* grid-template-rows: auto auto; */
     /* place-items: center; */
     height: 100vh;
     background: linear-gradient(0deg, rgb(0, 0, 0) 20%, rgb(63, 6, 50) 75%);
@@ -26,9 +26,9 @@ a {
 
 a:hover { COLOR: #a8bbbf; TEXT-DECORATION: none; font-weight: none }
 
-.header_icon{
+/* .header_icon{
     position: fixed;
-}
+} */
 
 .reg_link, .router_link {
     margin: 0;
@@ -47,8 +47,9 @@ a:hover { COLOR: #a8bbbf; TEXT-DECORATION: none; font-weight: none }
 .card {
     display: flex;
     flex-direction: column;
-    width: clamp(20rem, calc(20rem + 2vw), 22rem);
+    width: clamp(22em, calc(20em + 2vw), 22em);
     height: min-content;
+    /* width: 25%; */
     overflow: hidden;
     border-radius: 1em;
     background: #413F42;
