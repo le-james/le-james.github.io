@@ -112,3 +112,42 @@ li {
 .project_footer{
     color: white;
 }
+
+/* click zoom images */
+
+.zoom_img {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: equally-spaced;
+}
+  
+.zoom_img label {
+    position: relative;
+}
+
+.zoom_img img {
+    width: 75%;
+    object-fit: contain;
+}
+  
+.zoom_img input:checked+img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    background: rgba(75, 75, 75, 0.75);
+    object-fit: contain;
+}
+  
+.zoom_img input {
+    width: 19vh;
+    height: 19vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+}

@@ -4,15 +4,15 @@ import { Link } from 'react-router-dom';
 import { AiOutlineRollback } from "react-icons/ai"
 
 // cover images
-import od_cover from "../project_images/od/ekf_gps.png"
-import initialCov from "../project_images/od/initialCov.png"
-import plotInitialCov from "../project_images/od/plotInitialCov.png"
-import plotInitialCovProp from "../project_images/od/plotInitialCovProp.png"
-import ekf_first_pred from "../project_images/od/ekf_first_pred.png"
-import ekf_first_update_ano from "../project_images/od/ekf_first_update_ano.png"
-import full_ekf from "../project_images/od/full_ekf.png"
-import ekf_range_top from "../project_images/od/ekf_range_top.png"
-import ekf_range_side from "../project_images/od/ekf_range_side.png"
+import od_cover from "../project_images/od/lossy/ekf_gps_lossy.png"
+import initialCov from "../project_images/od/lossy/initialCov_lossy.png"
+import plotInitialCov from "../project_images/od/lossy/plotInitialCov_lossy.png"
+import plotInitialCovProp from "../project_images/od/lossy/plotInitialCovProp_lossy.png"
+import ekf_first_pred from "../project_images/od/lossy/ekf_first_pred_lossy.png"
+import ekf_first_update_ano from "../project_images/od/lossy/ekf_first_update_ano_lossy.png"
+import full_ekf from "../project_images/od/lossy/full_ekf_lossy.png"
+import ekf_range_top from "../project_images/od/lossy/ekf_range_top_lossy.png"
+import ekf_range_side from "../project_images/od/lossy/ekf_range_side_lossy.png"
 
 //CSS
 import "../projects.css"
@@ -28,7 +28,12 @@ function OD_project() {
             <div class="project-container">
                 <div class="in-card">
                     <div class="card__body">
-                        <img src={od_cover} style={{width: "75%"}} alt="orbits around earth"/>
+
+                        <label class="zoom_img">
+                            <input type="checkbox" onclick="event.stopPropagation();"/>
+                            {/* <img src={od_cover} style={{width: "75%"}} alt="orbits around earth"/> */}
+                            <img src={od_cover} alt="orbits around earth"/>
+                        </label>
 
                         <br/>
                         <hr/>
@@ -100,14 +105,20 @@ function OD_project() {
                             the matrix are the standard deviations or 1-sigma values of the gaussian distribution.
                         </p>
                         <br/>
-                        <img src={initialCov} alt="linear algebra matrix in matlab"/>
+                        <label class="zoom_img">
+                            <input type="checkbox" onclick="event.stopPropagation();"/>
+                            <img src={initialCov} alt="linear algebra matrix in matlab"/>   
+                        </label>
                         <br/>
                         <p>
                             Plotting the initial covariance matrix, a sphere can be seen beside the Earth. This is 
                             the volume where the spacecraft is initially thought to be.
                         </p>
                         <br/>
-                        <img src={plotInitialCov} alt="green sphere beside Earth"/>
+                        <label class="zoom_img">
+                            <input type="checkbox" onclick="event.stopPropagation();"/>
+                            <img src={plotInitialCov} alt="green sphere beside Earth"/>
+                        </label>
                         <br/>
                         <p>
                             Using the state transition matrix (STM), the initial covariance is propagated forward
@@ -117,7 +128,10 @@ function OD_project() {
                             "elongated" it becomes and thus the confidence region becomes too large. 
                         </p>
                         <br/>
-                        <img src={plotInitialCovProp} alt="multiple green spheres beside Earth"/>
+                        <label class="zoom_img">
+                            <input type="checkbox" onclick="event.stopPropagation();"/>
+                            <img src={plotInitialCovProp} alt="multiple green spheres beside Earth"/>
+                        </label>
 
                         <br/>
                         <p>
@@ -199,7 +213,10 @@ function OD_project() {
                             </li>
                         </ul>
                         <br/>
-                        <img src={ekf_first_pred} alt="two green spheres beside Earth"/>
+                        <label class="zoom_img">
+                            <input type="checkbox" onclick="event.stopPropagation();"/>
+                            <img src={ekf_first_pred} alt="two green spheres beside Earth"/>
+                        </label>
                         <br/>
                         <p>
                             The measurement step:
@@ -246,7 +263,10 @@ function OD_project() {
                             </li>
                         </ul>
                         <br/>
-                        <img src={ekf_first_update_ano} alt="two green spheres beside Earth"/>
+                        <label class="zoom_img">
+                            <input type="checkbox" onclick="event.stopPropagation();"/>
+                            <img src={ekf_first_update_ano} alt="two green spheres beside Earth"/>
+                        </label>
                         <br/>
                         <p>
                             Repeat:
@@ -273,7 +293,10 @@ function OD_project() {
                             </li>
                         </ul>
                         <br/>
-                        <img src={full_ekf} style={{width: "65%"}} alt="orbits around Earth"/>
+                        <label class="zoom_img">
+                            <input type="checkbox" onclick="event.stopPropagation();"/>
+                            <img src={full_ekf} alt="orbits around Earth"/>
+                        </label>
                         <br/>
                         <h2>Conclusion</h2>
                         <br/>
@@ -294,7 +317,10 @@ function OD_project() {
                             it converges, so why use the GPS measurements every 10 mins?
                         </p>
                         <br/>
-                        <img src={ekf_range_top} style={{width: "65%"}} alt="top view of Earth with orbit trajectories"/>
+                        <label class="zoom_img">
+                            <input type="checkbox" onclick="event.stopPropagation();"/>
+                            <img src={ekf_range_top} alt="top view of Earth with orbit trajectories"/>
+                        </label>
                         <br/>
                         <p>
                             Looking from the side, the range measurement only captures the shape of the
@@ -302,7 +328,10 @@ function OD_project() {
                             still inclined at an angle.
                         </p>
                         <br/>
-                        <img src={ekf_range_side} alt="side view of Earth with orbit trajectories"/>
+                        <label class="zoom_img">
+                            <input type="checkbox" onclick="event.stopPropagation();"/>
+                            <img src={ekf_range_side} alt="side view of Earth with orbit trajectories"/>
+                        </label>
                         <br/>
                         <p>
                             In the end it all comes down having hands on experience navigating a spacecraft. 

@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 import { AiFillHome } from "react-icons/ai"
 
 // cover images
-import od_cover from "./project_images/od/ekf_gps.png"
-import rpod_cover from "./project_images/rpod/inbound_glideslope.png"
-import testbed_cover from "./project_images/testbed/testbed.jpg"
-import ddr_cover from "./project_images/ddr/simple-traj-obs-avoidance.gif"
+import od_cover from "./project_images/od/lossy/ekf_gps_lossy.png"
+import rpod_cover from "./project_images/rpod/inbound_glideslope_lossy.png"
+import testbed_cover from "./project_images/testbed/testbed_lossy.jpg"
+import ddr_cover from "./project_images/ddr/simple-traj-obs-avoidance_lossy.gif"
 import printer_cover from "./project_images/3d_printer/3d-printer_r2.gif"
 // import plc_cover from "./project_images/plc/plc.gif"
 

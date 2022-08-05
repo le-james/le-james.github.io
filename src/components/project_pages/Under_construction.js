@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { AiOutlineRollback } from "react-icons/ai"
 
 // cover images
-import keep_calm_cover from "../project_images/under_construction/sub_keep_calm_cat.jpg"
+import keep_calm_cover from "../project_images/under_construction/sub_keep_calm_cat_lossy.jpg"
 
 //CSS
 import "../projects.css"
