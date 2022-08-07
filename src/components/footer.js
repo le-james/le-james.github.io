@@ -7,11 +7,11 @@ import './footer.css'
 
 // contact icons
 // import { AiFillGithub, AiOutlineMail } from "react-icons/ai";
-import { AiFillGithub } from "react-icons/ai";
+// import { AiFillGithub } from "react-icons/ai";
 // import { IoIosPaper } from "react-icons/io"
-import { BsTools } from "react-icons/bs"
+// import { BsTools } from "react-icons/bs"
 
-const Footer = ({ randRGB, randRGBgenerator, randRGBReset }) => {
+const Footer = ({ currPath, randRGB, randRGBgenerator, randRGBReset }) => {
 
     const githubLink = 'https://github.com/le-james?tab=repositories';
     // const email = "mailto:jle54218@usc.edu"
@@ -20,19 +20,38 @@ const Footer = ({ randRGB, randRGBgenerator, randRGBReset }) => {
 
     return (
         <motion.div className='footer-container' variants={containerVariants} initial="hidden" animate="visible">
+            
+            {currPath != "/" && 
+                <Link to="/">
+                    <motion.div className='icon' variants={iconVariant} onHoverStart={() => randRGBgenerator()} onHoverEnd={() => randRGBReset()} whileHover="hover" custom={randRGB}>
+                        Home
+                    </motion.div>
+                </Link>
+            }
+
+            {currPath != "/about" && 
+                <Link to="/about">
+                    <motion.div className='icon' variants={iconVariant} onHoverStart={() => randRGBgenerator()} onHoverEnd={() => randRGBReset()} whileHover="hover" custom={randRGB}>
+                        About
+                    </motion.div>
+                </Link>
+            }
+
+            {currPath != "/projects" && 
+                <Link to="/projects">
+                    <motion.div className='icon' variants={iconVariant} onHoverStart={() => randRGBgenerator()} onHoverEnd={() => randRGBReset()} whileHover="hover" custom={randRGB}>
+                        {/* <BsTools size="1.9em" /> */}
+                        Projects
+                    </motion.div>
+                </Link>
+            }
+
             <a href={githubLink} target="_blank" rel="noopener noreferrer"> 
                 <motion.div className="icon" variants={iconVariant} onHoverStart={() => randRGBgenerator()} onHoverEnd={() => randRGBReset()} whileHover="hover" custom={randRGB}>
                     {/* <AiFillGithub size="2em" /> */}
-                    GITHUB
+                    GitHub
                 </motion.div>
             </a>
-
-            <Link to="/projects">
-                <motion.div className='icon' variants={iconVariant} onHoverStart={() => randRGBgenerator()} onHoverEnd={() => randRGBReset()} whileHover="hover" custom={randRGB}>
-                    {/* <BsTools size="1.9em" /> */}
-                    PROJECTS
-                </motion.div>
-            </Link>
             
             {/* <a href={email} target="_blank" rel="noopener noreferrer"> 
                 <motion.div className='icon' variants={iconVariant} onHoverStart={() => randRGBgenerator()} onHoverEnd={() => randRGBReset()} whileHover="hover" custom={randRGB}>
@@ -75,7 +94,7 @@ const iconVariant = {
             y: [1, -1],
             color: `rgb(${randRGB.red}, ${randRGB.green}, ${randRGB.blue})`,
             transition: {
-                duration: 0.3,
+                duration: 0.2,
                 yoyo: Infinity,
                 ease: "easeInOut"
             }

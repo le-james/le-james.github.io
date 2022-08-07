@@ -20,7 +20,7 @@ function Under_construction() {
             <div class="project-container">
                 <div class="in-card">
                     <div class="card__body">
-                        <img src={keep_calm_cover} alt="cat with space helmet"/>
+                        <img src={keep_calm_cover} style={{width:"95%"}} alt="cat with space helmet"/>
 
                         <br/>
                         <hr/>

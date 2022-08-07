@@ -31,4 +31,12 @@
   ::-webkit-scrollbar {
       width: 0;
   }
+
+  #responsive-div {  
+    width: 100%;
+  } 
+
+  #responsive-image {  
+    width: max-content;
+  } 
 }

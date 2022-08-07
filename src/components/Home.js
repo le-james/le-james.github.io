@@ -5,11 +5,11 @@ import Footer from './footer'
 //CSS
 import "./home.css"
 
-const Home = ({ randRGB, randRGBgenerator, randRGBReset }) => {
+const Home = ({ currPath, randRGB, randRGBgenerator, randRGBReset }) => {
     return (
         <React.Fragment>
             <Slider randRGB={randRGB} randRGBgenerator={randRGBgenerator} randRGBReset={randRGBReset} />   
-            <Footer randRGB={randRGB} randRGBgenerator={randRGBgenerator} randRGBReset={randRGBReset} />    
+            <Footer currPath={currPath} randRGB={randRGB} randRGBgenerator={randRGBgenerator} randRGBReset={randRGBReset} />    
         </React.Fragment>
     )
 }

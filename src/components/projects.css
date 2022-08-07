@@ -10,7 +10,7 @@
     /* grid-template-rows: auto auto; */
     /* place-items: center; */
     height: 100vh;
-    background: linear-gradient(0deg, rgb(0, 0, 0) 20%, rgb(63, 6, 50) 75%);
+    background: linear-gradient(0deg, rgb(0, 0, 0) 20%, rgb(86, 8, 68) 75%);
     overflow-y: scroll;
 }
 
@@ -26,10 +26,6 @@ a {
 
 a:hover { COLOR: #a8bbbf; TEXT-DECORATION: none; font-weight: none }
 
-/* .header_icon{
-    position: fixed;
-} */
-
 .reg_link, .router_link {
     margin: 0;
 }
@@ -42,8 +38,8 @@ a:hover { COLOR: #a8bbbf; TEXT-DECORATION: none; font-weight: none }
     max-width: 1200px;
     margin-block: 2rem;
     gap: 2rem;
-    padding-bottom: 10em;
-
+    padding-bottom: 3em;
+    padding-top: 3em;
 }
 
 .card {
@@ -54,7 +50,8 @@ a:hover { COLOR: #a8bbbf; TEXT-DECORATION: none; font-weight: none }
     /* width: 25%; */
     overflow: hidden;
     border-radius: 1em;
-    background: #413F42;
+    background: rgba(75, 75, 75, 0.25);
+    outline: 1px solid rgba(255, 255, 255, 0.15);
     color: white;
 }
 
@@ -115,6 +112,8 @@ li {
     color: white;
 }
 
+
+
 /* click zoom images */
 
 .zoom_img {
@@ -129,7 +128,7 @@ li {
 }
 
 .zoom_img img {
-    width: 75%;
+    width: 45%;
     object-fit: contain;
 }
   

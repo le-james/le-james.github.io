@@ -1,7 +1,8 @@
 import React from 'react'
+import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
-import { AiFillHome } from "react-icons/ai"
+import Footer from './footer'
 
 // cover images
 import od_cover from "./project_images/od/lossy/ekf_gps_lossy.png"
@@ -14,13 +15,26 @@ import printer_cover from "./project_images/3d_printer/3d-printer_r2.gif"
 //CSS
 import "./projects.css"
 
-function Projects() {
+function Projects({ currPath, randRGB, randRGBgenerator, randRGBReset }) {
     return (
         <div class="projects">
-            <Link to="/"> {/* <AiFillHome class="header_icon" size="2em" /> */}HOME</Link>
 
-            <div class="project-container">
-            <div class="card">
+            <Footer currPath={currPath} randRGB={randRGB} randRGBgenerator={randRGBgenerator} randRGBReset={randRGBReset} />    
+
+            {/* <motion.div variants={containerVariants} initial="hidden" animate="visible">
+                <Link to="/">
+                    <motion.div variants={iconVariant}>
+                        Home
+                    </motion.div>
+                </Link>
+                <Link to="/about">                    
+                    <motion.div variants={iconVariant}>
+                        About
+                    </motion.div></Link>
+                </motion.div> */}
+
+            <motion.div class="project-container" variants={containerVariants} initial="hidden" animate="visible">
+                <motion.div class="card" variants={childVariant}>
                     <div class="card__body">
                         <img src={od_cover} alt="orbits around earth"/>
                         <h2>Orbit Determination</h2>
@@ -34,9 +48,9 @@ function Projects() {
                             <h5>Read more</h5>
                         </Link>
                     </div>
-                </div>
+                </motion.div>
 
-                <div class="card">
+                <motion.div class="card" variants={childVariant}>
                     <div class="card__body">
                         <img src={rpod_cover} alt="plot of waypoints"/>
                         <h2>Spacecraft Rendezvous, Proximity Operations and Docking (RPOD) Guidance</h2>
@@ -50,11 +64,11 @@ function Projects() {
                             <h5>Read more</h5>
                         </Link>
                     </div>
-                </div>
+                </motion.div>
 
-                <div class="card">
+                <motion.div class="card" variants={childVariant}>
                     <div class="card__body">
-                        <img src={testbed_cover} alt="orbits around earth"/>
+                        <img src={testbed_cover} alt="paint ball air tank testbed"/>
                         <h2>3 Degrees of Freedom Small Satellite Testbed</h2>
                         <p>
                             Developing the navigation, controls and software architecture.
@@ -66,12 +80,12 @@ function Projects() {
                             <h5>Read more</h5>
                         </Link>
                     </div>
-                </div>
+                </motion.div>
 
 
-                <div class="card">
+                <motion.div class="card" variants={childVariant}>
                     <div class="card__body">
-                        <img src={ddr_cover} alt="orbits around earth"/>
+                        <img src={ddr_cover} alt="gif of blue circle moving around red circle"/>
                         <h2>Differential Drive Robot (DDR) Trajectory Optimization</h2>
                         <p>Learned how to use IPOPT (Nonlinear optimization software) in Julia programming language</p>
                     </div>
@@ -81,11 +95,11 @@ function Projects() {
                             <h5>Read more</h5>
                         </Link>
                     </div>
-                </div>
+                </motion.div>
 
-                <div class="card">
+                <motion.div class="card" variants={childVariant}>
                     <div class="card__body">
-                        <img src={printer_cover} alt="orbits around earth"/>
+                        <img src={printer_cover} alt="gif of 3d printer"/>
                         <h2>3D Printer Project</h2>
                         <p>Built a 3D printer from stratch</p>
                     </div>
@@ -95,7 +109,7 @@ function Projects() {
                             <h5>Read more</h5>
                         </Link>
                     </div>
-                </div>
+                </motion.div>
 
                 {/* <div class="card">
                     <div class="card__body">
@@ -148,9 +162,30 @@ function Projects() {
                     </div>
                 </div> */}
 
-            </div>
+            </motion.div>
         </div>
     )
+}
+
+const containerVariants = {
+    hidden: {
+        opacity: 0,
+    },
+    visible: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.15,
+        }
+    }
+}
+
+const childVariant = {
+    hidden: {
+        opacity: 0,
+    },
+    visible: {
+        opacity: 1,
+    },
 }
 
 export default Projects

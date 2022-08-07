@@ -5,6 +5,7 @@ import { Route, Switch, useLocation } from "react-router-dom";
 
 //project component
 import Projects from "./components/Projects";
+import About from "./components/About";
 
 //project pages component
 import OD_project from "./components/project_pages/OD_project";
@@ -51,13 +52,16 @@ const App = () => {
   }
 
 let location = useLocation()
+let currPath = location.pathname
+// console.log(currPath)
 
   return (
     <Switch key={location.key} location={location}>
-      <Route path="/" exact render={(props) => ( <Home {...props} randRGB={randRGB} randRGBgenerator={randRGBgenerator} randRGBReset={randRGBReset}/> )} />
-      <Route path="/projects" component={Projects}/>
+      <Route path="/" exact render={(props) => ( <Home {...props} currPath={currPath} randRGB={randRGB} randRGBgenerator={randRGBgenerator} randRGBReset={randRGBReset}/>)} />
+      <Route path="/projects" render={(props) => ( <Projects {...props} currPath={currPath} randRGB={randRGB} randRGBgenerator={randRGBgenerator} randRGBReset={randRGBReset}/>)} />
+      <Route path="/about" render={(props) => ( <About {...props} currPath={currPath} randRGB={randRGB} randRGBgenerator={randRGBgenerator} randRGBReset={randRGBReset}/>)} />
 
-      <Route path="/od_project" component={OD_project}/>
+      <Route path="/od_project" render={(props) => ( <OD_project {...props} currPath={currPath} randRGB={randRGB} randRGBgenerator={randRGBgenerator} randRGBReset={randRGBReset}/>)} />
       <Route path="/rpod_project" component={Under_construction}/>
       <Route path="/testbed_project" component={Under_construction}/>
       <Route path="/ddr_project" component={Under_construction}/>

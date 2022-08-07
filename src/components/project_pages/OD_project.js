@@ -1,7 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
-
-import { AiOutlineRollback } from "react-icons/ai"
+import Footer from '../footer'
 
 // cover images
 import od_cover from "../project_images/od/lossy/ekf_gps_lossy.png"
@@ -19,12 +17,18 @@ import "../projects.css"
 
 const githubLink = 'https://github.com/le-james/orbital-mechanics';
 
-function OD_project() {
+function OD_project({ currPath, randRGB, randRGBgenerator, randRGBReset }) {
     return (
         <div class="projects">
-            <Link to="/projects">
-                <AiOutlineRollback class="header_icon" size="2em" />
-            </Link>
+
+            <Footer currPath={currPath} randRGB={randRGB} randRGBgenerator={randRGBgenerator} randRGBReset={randRGBReset} />    
+
+            {/* <div>
+                <Link to="/">Home</Link>
+                <Link to="/about">About</Link>
+                <Link to="/projects">Projects</Link>
+            </div> */}
+
             <div class="project-container">
                 <div class="in-card">
                     <div class="card__body">
@@ -32,13 +36,13 @@ function OD_project() {
                         <label class="zoom_img">
                             <input type="checkbox" onclick="event.stopPropagation();"/>
                             {/* <img src={od_cover} style={{width: "75%"}} alt="orbits around earth"/> */}
-                            <img src={od_cover} alt="orbits around earth"/>
+                            <img src={od_cover} alt="orbits around earth" id="responsive-image"/>
                         </label>
 
                         <br/>
                         <hr/>
                         <a className='reg_link' href={githubLink} target="_blank" rel="noopener noreferrer">
-                            View GitHub Repo
+                            View the project's GitHub Repo
                         </a>
 
                         <h2>Orbit Determination</h2>
@@ -107,7 +111,7 @@ function OD_project() {
                         <br/>
                         <label class="zoom_img">
                             <input type="checkbox" onclick="event.stopPropagation();"/>
-                            <img src={initialCov} alt="linear algebra matrix in matlab"/>   
+                            <img src={initialCov} alt="linear algebra matrix in matlab" id="responsive-image"/>   
                         </label>
                         <br/>
                         <p>
@@ -117,7 +121,7 @@ function OD_project() {
                         <br/>
                         <label class="zoom_img">
                             <input type="checkbox" onclick="event.stopPropagation();"/>
-                            <img src={plotInitialCov} alt="green sphere beside Earth"/>
+                            <img src={plotInitialCov} alt="green sphere beside Earth" id="responsive-image"/>
                         </label>
                         <br/>
                         <p>
@@ -130,7 +134,7 @@ function OD_project() {
                         <br/>
                         <label class="zoom_img">
                             <input type="checkbox" onclick="event.stopPropagation();"/>
-                            <img src={plotInitialCovProp} alt="multiple green spheres beside Earth"/>
+                            <img src={plotInitialCovProp} alt="multiple green spheres beside Earth" id="responsive-image"/>
                         </label>
 
                         <br/>
@@ -215,7 +219,7 @@ function OD_project() {
                         <br/>
                         <label class="zoom_img">
                             <input type="checkbox" onclick="event.stopPropagation();"/>
-                            <img src={ekf_first_pred} alt="two green spheres beside Earth"/>
+                            <img src={ekf_first_pred} alt="two green spheres beside Earth" id="responsive-image"/>
                         </label>
                         <br/>
                         <p>
@@ -265,7 +269,7 @@ function OD_project() {
                         <br/>
                         <label class="zoom_img">
                             <input type="checkbox" onclick="event.stopPropagation();"/>
-                            <img src={ekf_first_update_ano} alt="two green spheres beside Earth"/>
+                            <img src={ekf_first_update_ano} alt="two green spheres beside Earth" id="responsive-image"/>
                         </label>
                         <br/>
                         <p>
@@ -295,7 +299,7 @@ function OD_project() {
                         <br/>
                         <label class="zoom_img">
                             <input type="checkbox" onclick="event.stopPropagation();"/>
-                            <img src={full_ekf} alt="orbits around Earth"/>
+                            <img src={full_ekf} alt="orbits around Earth" id="responsive-image"/>
                         </label>
                         <br/>
                         <h2>Conclusion</h2>
@@ -319,7 +323,7 @@ function OD_project() {
                         <br/>
                         <label class="zoom_img">
                             <input type="checkbox" onclick="event.stopPropagation();"/>
-                            <img src={ekf_range_top} alt="top view of Earth with orbit trajectories"/>
+                            <img src={ekf_range_top} alt="top view of Earth with orbit trajectories" id="responsive-image"/>
                         </label>
                         <br/>
                         <p>
@@ -330,7 +334,7 @@ function OD_project() {
                         <br/>
                         <label class="zoom_img">
                             <input type="checkbox" onclick="event.stopPropagation();"/>
-                            <img src={ekf_range_side} alt="side view of Earth with orbit trajectories"/>
+                            <img src={ekf_range_side} alt="side view of Earth with orbit trajectories" id="responsive-image"/>
                         </label>
                         <br/>
                         <p>
