@@ -19,9 +19,9 @@ const Footer = ({ currPath, randRGB, randRGBgenerator, randRGBReset }) => {
     // const resumeLink = "https://drive.google.com/file/d/1Tx-HEtr4ujHTexdrH2ENrta2K64_xPod/view?usp=sharing"
 
     return (
-        <motion.div className='footer-container' variants={containerVariants} initial="hidden" animate="visible">
+        <motion.div className={currPath === "/" ? 'footer-container' : ''} variants={containerVariants} initial="hidden" animate="visible">
             
-            {currPath != "/" && 
+            {currPath !== "/" && 
                 <Link to="/">
                     <motion.div className='icon' variants={iconVariant} onHoverStart={() => randRGBgenerator()} onHoverEnd={() => randRGBReset()} whileHover="hover" custom={randRGB}>
                         Home
@@ -29,7 +29,7 @@ const Footer = ({ currPath, randRGB, randRGBgenerator, randRGBReset }) => {
                 </Link>
             }
 
-            {currPath != "/about" && 
+            {currPath !== "/about" && 
                 <Link to="/about">
                     <motion.div className='icon' variants={iconVariant} onHoverStart={() => randRGBgenerator()} onHoverEnd={() => randRGBReset()} whileHover="hover" custom={randRGB}>
                         About
@@ -37,7 +37,7 @@ const Footer = ({ currPath, randRGB, randRGBgenerator, randRGBReset }) => {
                 </Link>
             }
 
-            {currPath != "/projects" && 
+            {currPath !== "/projects" && 
                 <Link to="/projects">
                     <motion.div className='icon' variants={iconVariant} onHoverStart={() => randRGBgenerator()} onHoverEnd={() => randRGBReset()} whileHover="hover" custom={randRGB}>
                         {/* <BsTools size="1.9em" /> */}
