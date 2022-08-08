@@ -39,7 +39,7 @@ a:hover { COLOR: #a8bbbf; TEXT-DECORATION: none; font-weight: none }
     margin-block: 2rem;
     gap: 2rem;
     padding-bottom: 5em;
-    padding-top: 3em;
+    /* padding-top: 3em; */
 }
 
 .card {
