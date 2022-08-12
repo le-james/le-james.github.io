@@ -11,7 +11,7 @@ import "./about.css"
 
 function About({ currPath, randRGB, randRGBgenerator, randRGBReset }) {
     return (
-        <div class="projects" style={{overflow: "hidden"}}>
+        <div class="projects">
 
             <Footer currPath={currPath} randRGB={randRGB} randRGBgenerator={randRGBgenerator} randRGBReset={randRGBReset} />    
 
