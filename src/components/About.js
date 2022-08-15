@@ -58,16 +58,9 @@ const para = {paddingTop:"0.75em"}
 const containerVariants = {
     hidden: {
         opacity:0,
-        y:"100vh"
     },
     visible: {
         opacity:1,
-        y:0,
-        transition: {
-            type: "spring",
-            damping: 14,
-            ease: "easeInOut", 
-        }
     }
 }
 

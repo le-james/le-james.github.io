@@ -12,6 +12,7 @@
     height: 100vh;
     background: linear-gradient(0deg, rgb(0, 0, 0) 20%, rgb(86, 8, 68) 75%);
     overflow-y: scroll;
+    /* overflow: hidden; */
 }
 
 a {

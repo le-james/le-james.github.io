@@ -12,7 +12,7 @@ import OD_project from "./components/project_pages/OD_project";
 // import RPOD_project from "./components/project_pages/RPOD_project";
 // import TESTBED_project from "./components/project_pages/TESTBED_project";
 // import DDR_project from "./components/project_pages/DDR_project";
-// import PRINTER_project from "./components/project_pages/PRINTER_project";
+import PRINTER_project from "./components/project_pages/PRINTER_project";
 // import PLC_project from "./components/project_pages/PLC_project";
 
 import Under_construction from "./components/project_pages/Under_construction";
@@ -65,7 +65,7 @@ let currPath = location.pathname
       <Route path="/rpod_project" component={Under_construction}/>
       <Route path="/testbed_project" component={Under_construction}/>
       <Route path="/ddr_project" component={Under_construction}/>
-      <Route path="/printer_project" component={Under_construction}/>
+      <Route path="/printer_project" render={(props) => ( <PRINTER_project {...props} currPath={currPath} randRGB={randRGB} randRGBgenerator={randRGBgenerator} randRGBReset={randRGBReset}/>)} />
       {/* <Route path="/plc_project" component={PLC_project}/> */}
     </Switch>
   )
