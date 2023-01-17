@@ -26,11 +26,11 @@ function PRINTER_project({ currPath, randRGB, randRGBgenerator, randRGBReset }) 
                         <br/>
                         <hr/>
 
-                        <h2>UNDER CONSTRUCTION</h2>
+                        {/* <h2>UNDER CONSTRUCTION</h2>
                         <p>
                             More coming soon...
                         </p>
-                        <br/>
+                        <br/> */}
 
                         <h2>3D Printer Build</h2>
 

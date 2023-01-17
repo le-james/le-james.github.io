@@ -68,12 +68,12 @@ function OD_project({ currPath, randRGB, randRGBgenerator, randRGBReset }) {
 
                         <br/>
 
-                        <h3> The goal: To figure out where a spacecraft is within some confidence ellipse </h3>
+                        <h3> The goal: To figure out where a spacecraft is within some region of confidence </h3>
                         <p>
                             In this Two Body simulation an Extended Kalman Filter (EKF) is used to determine
-                            the orbit that a spaceraft is on around Earth. The truth orbit represents the 
+                            the orbit that a spacecraft is on around Earth. The truth orbit represents the 
                             actual orbit of the spacecraft, which is never actually known in practice. It is 
-                            used to observe how the EKF coverges to it. The estimated orbit is where we think 
+                            used to observe how the EKF converges to it. The estimated orbit is where we think 
                             the spacecraft is given some initial conditions with small deviations. The pink 
                             dots in the figure represents the estimate from the EKF of where the spacecraft 
                             should be.
@@ -85,7 +85,7 @@ function OD_project({ currPath, randRGB, randRGBgenerator, randRGBReset }) {
                         <p>
                             First used to navigate the Apollo Missions to the Moon now has uses in many other
                             applications such as sensor fusion and state estimation in robotics. Due to its 
-                            elegance and simplicity with only having to solve five equations recusively.
+                            elegance and simplicity with only having to solve five equations recursively.
                         </p>
                         <br/>
                         <p>
@@ -128,7 +128,7 @@ function OD_project({ currPath, randRGB, randRGBgenerator, randRGBReset }) {
                             Using the state transition matrix (STM), the initial covariance is propagated forward
                             three times at 10 minute increments. It can be seen that the nonlinearity of the Two
                             Body dynamics affects where the spacecraft could be. i.e. the initial sphere gets 
-                            morphed into an ellipsoid. The further fowards it gets propagated in time the more 
+                            morphed into an ellipsoid. The further forwards it gets propagated in time the more 
                             "elongated" it becomes and thus the confidence region becomes too large. 
                         </p>
                         <br/>
@@ -202,7 +202,7 @@ function OD_project({ currPath, randRGB, randRGBgenerator, randRGBReset }) {
                         <ul>
                             <li>
                                 Using the EOM and STM, the initial states and covariance are propagated forward 
-                                by 10 mins using the predition equations.
+                                by 10 mins using the prediction equations.
                             </li>
                             <li>
                                 The green line with squares represents the Two Body EOM being solved using a 
@@ -232,7 +232,7 @@ function OD_project({ currPath, randRGB, randRGBgenerator, randRGBReset }) {
                             </li>
                             <li>
                                 Since the truth orbit is known in this simulation the position at 10 mins can 
-                                be used to act as a GPS position measurement of the acutal spacecraft.
+                                be used to act as a GPS position measurement of the actual spacecraft.
                             </li>
                             <li>
                                 To add a realistic element into the simulation the GPS measurement is taken
@@ -305,7 +305,7 @@ function OD_project({ currPath, randRGB, randRGBgenerator, randRGBReset }) {
                         <h2>Conclusion</h2>
                         <br/>
                         <p>
-                            The above seems easy enough... but in reality the truth orbit isn't known and there are
+                            The above seems easy enough... but in reality, the truth orbit isn't known and there are
                             many factors that affects how the estimated states from the EKF converges to 
                             the real orbit or not.
                         </p>

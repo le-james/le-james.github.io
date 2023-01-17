@@ -19,8 +19,8 @@ function DDR_project() {
                 <div class="card in-card">
                     <div class="card__body">
                         {/* <img src={ddr_cover} alt="orbits around earth"/> */}
-                        <h2>Differential Drive Robot (DDR) Trajectory Optimization</h2>
-                        <p>Learned how to use IPOPT (Nonlinear optimization software) in Julia programming language</p>
+                        <h2>Simple Trajectory Optimization</h2>
+                        <p>Used IPOPT (Nonlinear optimization software) to generate a path that avoided a obstacle using using differential drive.</p>
                         <ul>
                             <li>
                                 Used the kinematics of a DDR to generate a simple trajectory that avoids a known obstacle

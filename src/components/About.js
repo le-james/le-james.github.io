@@ -26,16 +26,17 @@ function About({ currPath, randRGB, randRGBgenerator, randRGBReset }) {
                         <h2 style={headerStyle}>👨‍🚀 About James</h2>
 
                         <p style={para}>
-                            &#9996; I am a M.S. student at the University of Southern California in the 
-                            Astronautical Engineering Department.
+                            &#9996; Currently a M.S. student at the University of Southern California in the 
+                            Astronautical Engineering Department with a focus in astrodynamics, navigation and controls.
                         </p>
                         <p style={para}>
-                            Interested in all things that integrate ⚙️mechanical, ⚡electronics and 👨‍💻software, 
-                            Mechatronics!
-                        </p>                      
-                        <p style={para}>
+                            Interested in all things that integrate ⚙️mechanical,⚡electronics and 👨‍💻software, 
+                            Mechatronics! My most rewarding endeavours spans multiple disciplines.  
+                        </p>          
+
+                        {/* <p style={para}>
                             Currently focusing on the controls of robotic systems.
-                        </p>
+                        </p> */}
 
                         <br/>
 

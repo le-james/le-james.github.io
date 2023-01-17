@@ -8,10 +8,12 @@ import Projects from "./components/Projects";
 import About from "./components/About";
 
 //project pages component
+import QR_project from "./components/project_pages/QR_project";
+import SF_project from "./components/project_pages/SF_project";
 import OD_project from "./components/project_pages/OD_project";
-// import RPOD_project from "./components/project_pages/RPOD_project";
+import RPOD_project_R1 from "./components/project_pages/RPOD_project_R1";
 // import TESTBED_project from "./components/project_pages/TESTBED_project";
-// import DDR_project from "./components/project_pages/DDR_project";
+import DDR_project_R1 from "./components/project_pages/DDR_project_R1";
 import PRINTER_project from "./components/project_pages/PRINTER_project";
 // import PLC_project from "./components/project_pages/PLC_project";
 
@@ -61,10 +63,12 @@ let currPath = location.pathname
       <Route path="/projects" render={(props) => ( <Projects {...props} currPath={currPath} randRGB={randRGB} randRGBgenerator={randRGBgenerator} randRGBReset={randRGBReset}/>)} />
       <Route path="/about" render={(props) => ( <About {...props} currPath={currPath} randRGB={randRGB} randRGBgenerator={randRGBgenerator} randRGBReset={randRGBReset}/>)} />
 
+      <Route path="/qr_project" render={(props) => ( <QR_project {...props} currPath={currPath} randRGB={randRGB} randRGBgenerator={randRGBgenerator} randRGBReset={randRGBReset}/>)} />
+      <Route path="/sf_project" render={(props) => ( <SF_project {...props} currPath={currPath} randRGB={randRGB} randRGBgenerator={randRGBgenerator} randRGBReset={randRGBReset}/>)} />
       <Route path="/od_project" render={(props) => ( <OD_project {...props} currPath={currPath} randRGB={randRGB} randRGBgenerator={randRGBgenerator} randRGBReset={randRGBReset}/>)} />
-      <Route path="/rpod_project" component={Under_construction}/>
-      <Route path="/testbed_project" component={Under_construction}/>
-      <Route path="/ddr_project" component={Under_construction}/>
+      <Route path="/rpod_project" render={(props) => ( <RPOD_project_R1 {...props} currPath={currPath} randRGB={randRGB} randRGBgenerator={randRGBgenerator} randRGBReset={randRGBReset}/>)} />
+      {/* <Route path="/testbed_project" component={Under_construction}/> */}
+      <Route path="/ddr_project" render={(props) => ( <DDR_project_R1 {...props} currPath={currPath} randRGB={randRGB} randRGBgenerator={randRGBgenerator} randRGBReset={randRGBReset}/>)} />
       <Route path="/printer_project" render={(props) => ( <PRINTER_project {...props} currPath={currPath} randRGB={randRGB} randRGBgenerator={randRGBgenerator} randRGBReset={randRGBReset}/>)} />
       {/* <Route path="/plc_project" component={PLC_project}/> */}
     </Switch>

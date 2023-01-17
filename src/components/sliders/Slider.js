@@ -13,7 +13,8 @@ function Slider({ randRGB, randRGBgenerator, randRGBReset }) {
     const [pageNum, changePage] = useState(0);
     const [slideDir, changeDir] = useState(0);
 
-    const slides = [FirstSlide, SecondSlide, ThirdSlide, FourthSlide]
+    // const slides = [FirstSlide, SecondSlide, ThirdSlide, FourthSlide]
+    const slides = [FirstSlide, SecondSlide, ThirdSlide]
     let SlideComponent = slides[pageNum];
     
     // AUTO PLAY SLIDES

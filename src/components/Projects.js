@@ -5,9 +5,11 @@ import { Link } from 'react-router-dom';
 import Footer from './footer'
 
 // cover images
+import sf_cover from "./project_images/sf/sf_cover.gif"
+import qr_cover from "./project_images/qr/qr_cover.jpg"
 import od_cover from "./project_images/od/lossy/ekf_gps_lossy.png"
 import rpod_cover from "./project_images/rpod/inbound_glideslope_lossy.png"
-import testbed_cover from "./project_images/testbed/testbed_lossy.jpg"
+// import testbed_cover from "./project_images/testbed/testbed_lossy.jpg"
 import ddr_cover from "./project_images/ddr/simple-traj-obs-avoidance_lossy.gif"
 import printer_cover from "./project_images/3d_printer/3d-printer_r2.gif"
 // import plc_cover from "./project_images/plc/plc.gif"
@@ -33,13 +35,47 @@ function Projects({ currPath, randRGB, randRGBgenerator, randRGBReset }) {
                     </motion.div></Link>
                 </motion.div> */}
 
+
+
             <motion.div class="project-container" variants={containerVariants} initial="hidden" animate="visible">
+                <motion.div class="card" variants={childVariant}>
+                    <div class="card__body">
+                        <img src={qr_cover} alt="top down view of a quadcopter"/>
+                        <h2>Quadcopter</h2>
+                        <p>
+                            Developing a flight controller for a quadcopter.
+                        </p>
+                    </div>
+                    <div class="card__footer">
+                        <hr/>
+                        <Link className='router_link' to="/qr_project">
+                            <h5>Read more</h5>
+                        </Link>
+                    </div>
+                </motion.div>
+                
+                <motion.div class="card" variants={childVariant}>
+                    <div class="card__body">
+                        <img src={sf_cover} alt="gif of inertial measurement unit"/>
+                        <h2>Sensor Fusion</h2>
+                        <p>
+                            Implemented the Mahony Filter for attitude tracking using a 6DOF IMU.
+                        </p>
+                    </div>
+                    <div class="card__footer">
+                        <hr/>
+                        <Link className='router_link' to="/sf_project">
+                            <h5>Read more</h5>
+                        </Link>
+                    </div>
+                </motion.div>
+                
                 <motion.div class="card" variants={childVariant}>
                     <div class="card__body">
                         <img src={od_cover} alt="orbits around earth"/>
                         <h2>Orbit Determination</h2>
                         <p>
-                            Nonlinear state estimation of a spacecraft in orbit using an Extended Kalman Filter
+                            Nonlinear state estimation of a spacecraft in orbit using an Extended Kalman Filter.
                         </p>
                     </div>
                     <div class="card__footer">
@@ -53,9 +89,9 @@ function Projects({ currPath, randRGB, randRGBgenerator, randRGBReset }) {
                 <motion.div class="card" variants={childVariant}>
                     <div class="card__body">
                         <img src={rpod_cover} alt="plot of waypoints"/>
-                        <h2>Spacecraft Rendezvous, Proximity Operations and Docking (RPOD) Guidance</h2>
+                        <h2>Guidance for Spacecraft Rendezvous, Proximity Operations and Docking</h2>
                         <p>
-                            Simulation of RPOD based on the Clohessy-Whiltshire Equations.
+                            A multi-phased guidance trajectory for RPOD in circluar Earth orbit.
                         </p>
                     </div>
                     <div class="card__footer">
@@ -66,7 +102,7 @@ function Projects({ currPath, randRGB, randRGBgenerator, randRGBReset }) {
                     </div>
                 </motion.div>
 
-                <motion.div class="card" variants={childVariant}>
+                {/* <motion.div class="card" variants={childVariant}>
                     <div class="card__body">
                         <img src={testbed_cover} alt="paint ball air tank testbed"/>
                         <h2>3 Degrees of Freedom Small Satellite Testbed</h2>
@@ -80,14 +116,14 @@ function Projects({ currPath, randRGB, randRGBgenerator, randRGBReset }) {
                             <h5>Read more</h5>
                         </Link>
                     </div>
-                </motion.div>
+                </motion.div> */}
 
 
                 <motion.div class="card" variants={childVariant}>
                     <div class="card__body">
                         <img src={ddr_cover} alt="gif of blue circle moving around red circle"/>
-                        <h2>Differential Drive Robot (DDR) Trajectory Optimization</h2>
-                        <p>Learned how to use IPOPT (Nonlinear optimization software) in Julia programming language</p>
+                        <h2>Trajectory Optimization</h2>
+                        <p>Generated a path that avoided an obstacle for a differential drive robot.</p>
                     </div>
                     <div class="card__footer">
                         <hr/>
@@ -100,8 +136,8 @@ function Projects({ currPath, randRGB, randRGBgenerator, randRGBReset }) {
                 <motion.div class="card" variants={childVariant}>
                     <div class="card__body">
                         <img src={printer_cover} alt="gif of 3d printer"/>
-                        <h2>3D Printer Project</h2>
-                        <p>Built a 3D printer from stratch</p>
+                        <h2>3D Printer</h2>
+                        <p>Built a 3D printer from scratch </p>
                     </div>
                     <div class="card__footer">
                         <hr/>
