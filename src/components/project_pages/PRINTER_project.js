@@ -20,6 +20,7 @@ function PRINTER_project({ currPath, randRGB, randRGBgenerator, randRGBReset }) 
                     <div class="card__body">
 
                         <label class="zoom_img">
+                            <input type="checkbox" onclick="event.stopPropagation();"/>
                             <img src={printer_cover} alt="3d printer gif" id="responsive-image"/>
                         </label>
 
