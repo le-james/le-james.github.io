@@ -39,14 +39,14 @@ const navVariant = {
     visible: (arr) => {
         if(arr[0] === arr[1]) {
             return {
-                margin: "10em",
+                // margin: "10em",
                 display: "inline-block",
                 y: 0,
                 color: "rgb(255, 255, 255)"
             }   
         } else {
             return {
-                margin: "10em",
+                // margin: "10em",
                 cursor: "pointer",
                 display: "inline-block",
                 y: 0,

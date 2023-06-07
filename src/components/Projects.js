@@ -43,7 +43,7 @@ function Projects({ currPath, randRGB, randRGBgenerator, randRGBReset }) {
                         <img src={qr_cover} alt="top down view of a quadcopter"/>
                         <h2>Quadcopter</h2>
                         <p>
-                            Developing a flight controller for a quadcopter.
+                            Developing a flight software for a quadcopter.
                         </p>
                     </div>
                     <div class="card__footer">

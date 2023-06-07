@@ -6,7 +6,7 @@ import SliderNav from './SliderNav';
 import FirstSlide from "./slides/FirstSlide"
 import SecondSlide from "./slides/SecondSlide"
 import ThirdSlide from "./slides/ThirdSlide"
-import FourthSlide from "./slides/FourthSlide"
+// import FourthSlide from "./slides/FourthSlide"
 
 function Slider({ randRGB, randRGBgenerator, randRGBReset }) {
 

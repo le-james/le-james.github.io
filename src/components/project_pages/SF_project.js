@@ -39,7 +39,7 @@ function OD_project({ currPath, randRGB, randRGBgenerator, randRGBReset }) {
 
                         <h3> The goal: Implement a quaternion based sensor fusion algorithm </h3>
                         <p>
-                            This algorithm is developed on a Raspberry Pi Pico using C and MPU 6050 IMU.
+                            This algorithm is developed on a Raspberry Pi Pico using C/C++ and MPU 6050 IMU.
                         </p>
 
                         <br/>
@@ -97,7 +97,6 @@ function OD_project({ currPath, randRGB, randRGBgenerator, randRGBReset }) {
                         </p>
 
 
-                        <br/>
                         <br/>
                         <hr/>
                         <div className='project_footer'>

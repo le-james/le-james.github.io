@@ -27,7 +27,7 @@ function About({ currPath, randRGB, randRGBgenerator, randRGBReset }) {
 
                         <p style={para}>
                             &#9996; Currently a M.S. student at the University of Southern California in the 
-                            Astronautical Engineering Department with a focus in astrodynamics, navigation and controls.
+                            Astronautical Engineering Department with a focus in guidance, navigation and controls.
                         </p>
                         <p style={para}>
                             Interested in all things that integrate ⚙️mechanical,⚡electronics and 👨‍💻software, 
