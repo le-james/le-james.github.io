@@ -28,9 +28,9 @@ function SliderNav({ pageNum, changePage, changeDir, randRGB, randRGBgenerator, 
                 <GrOracle size="2em" onClick={() => slideDots(2)} />
             </motion.div>
 
-            {/* <motion.div variants={navVariant} transition={navVariant.transition} onHoverStart={() => randRGBgenerator()} onHoverEnd={() => randRGBReset()} whileHover="hover" custom={arr3}>
+            <motion.div variants={navVariant} transition={navVariant.transition} onHoverStart={() => randRGBgenerator()} onHoverEnd={() => randRGBReset()} whileHover="hover" custom={arr3}>
                 <GrOracle size="2em" onClick={() => slideDots(3)} />
-            </motion.div> */}
+            </motion.div>
         </div>
     )
 }

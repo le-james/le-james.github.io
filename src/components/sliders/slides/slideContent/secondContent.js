@@ -26,6 +26,20 @@ function secondContent({ wordVariants, letterVariants }) {
                 <motion.div variants={letterVariants} className="letter space"> s </motion.div>
             </div>
 
+            <div className="letterContainer">
+                <motion.div variants={letterVariants} className="letter"> E </motion.div>
+                <motion.div variants={letterVariants} className="letter"> n </motion.div>
+                <motion.div variants={letterVariants} className="letter"> g </motion.div>
+                <motion.div variants={letterVariants} className="letter"> i </motion.div>
+                <motion.div variants={letterVariants} className="letter"> n </motion.div>
+                <motion.div variants={letterVariants} className="letter"> e </motion.div>
+                <motion.div variants={letterVariants} className="letter"> e </motion.div>
+                <motion.div variants={letterVariants} className="letter"> r </motion.div>
+                <motion.div variants={letterVariants} className="letter"> i </motion.div>
+                <motion.div variants={letterVariants} className="letter"> n </motion.div>
+                <motion.div variants={letterVariants} className="letter space"> g </motion.div>
+            </div>
+
         </motion.div>
     )
 }

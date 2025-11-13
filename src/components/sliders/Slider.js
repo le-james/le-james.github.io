@@ -6,7 +6,7 @@ import SliderNav from './SliderNav';
 import FirstSlide from "./slides/FirstSlide"
 import SecondSlide from "./slides/SecondSlide"
 import ThirdSlide from "./slides/ThirdSlide"
-// import FourthSlide from "./slides/FourthSlide"
+import FourthSlide from "./slides/FourthSlide"
 
 function Slider({ randRGB, randRGBgenerator, randRGBReset }) {
 
@@ -14,7 +14,7 @@ function Slider({ randRGB, randRGBgenerator, randRGBReset }) {
     const [slideDir, changeDir] = useState(0);
 
     // const slides = [FirstSlide, SecondSlide, ThirdSlide, FourthSlide]
-    const slides = [FirstSlide, SecondSlide, ThirdSlide]
+    const slides = [FirstSlide, SecondSlide, ThirdSlide, FourthSlide]
     let SlideComponent = slides[pageNum];
     
     // AUTO PLAY SLIDES

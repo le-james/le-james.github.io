@@ -23,25 +23,31 @@ function About({ currPath, randRGB, randRGBgenerator, randRGBReset }) {
                         {/* <br/> */}
                         {/* <hr/> */}
 
-                        <h2 style={headerStyle}>👨‍🚀 About James</h2>
+                        <h2 style={headerStyle}>👨‍🚀 About James </h2>
 
                         <p style={para}>
-                            &#9996; Currently a M.S. student at the University of Southern California in the 
-                            Astronautical Engineering Department with a focus in guidance, navigation and controls.
+                            ✌️ I’m currently an R&D Systems Engineer at Bornea Dynamics, working on a variety of technologies for the defense sector.
+                        </p>    
+
+                        <p style={para}>
+                            I earned my Masters in Astronautical Engineering from the University of Southern California, specializing in Guidance, 
+                            Navigation, and Control systems.
                         </p>
-                        <p style={para}>
-                            Interested in all things that integrate ⚙️mechanical,⚡electronics and 👨‍💻software, 
-                            Mechatronics! My most rewarding endeavours spans multiple disciplines.  
-                        </p>          
 
-                        {/* <p style={para}>
-                            Currently focusing on the controls of robotic systems.
-                        </p> */}
+                        <p style={para}>     
+                            I’m fascinated by anything that brings ⚙️ mechanical, ⚡ electronics, and 👨‍💻 software together, Mechatronics! 
+                            Right now, I’m focused on software and algorithm development for 🤖 robotics, 🧠 autonomy, and 🛸 space applications.
+                        </p>            
+
+                        <p style={para}>
+                            The projects I enjoy most combine multiple disciplines, where I get to create autonomous and robotic systems that push 
+                            the boundaries of technology.
+                        </p>
 
                         <br/>
 
                         <h3 style={headerStyle}>📡 Contact</h3>
-                        <p style={para}>&#9993; jle54218@usc.edu</p>
+                        <p style={para}>&#9993; jamesle@alumni.usc.edu</p>
                     </div>
                 </div>
             </motion.div>

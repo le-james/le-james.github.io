@@ -6,23 +6,6 @@ function thirdContent({ wordVariants, letterVariants }) {
         <motion.div variants={wordVariants} initial="hidden" animate="visible" className="text topText" >
 
             <div className="letterContainer">
-                <motion.div variants={letterVariants} className="letter"> C </motion.div>
-                <motion.div variants={letterVariants} className="letter"> u </motion.div>
-                <motion.div variants={letterVariants} className="letter"> r </motion.div>
-                <motion.div variants={letterVariants} className="letter"> r </motion.div>
-                <motion.div variants={letterVariants} className="letter"> e </motion.div>
-                <motion.div variants={letterVariants} className="letter"> n </motion.div>
-                <motion.div variants={letterVariants} className="letter"> t </motion.div>
-                <motion.div variants={letterVariants} className="letter space"> : </motion.div>
-            </div>
-
-            <div className="letterContainer">
-                <motion.div variants={letterVariants} className="letter"> U </motion.div>
-                <motion.div variants={letterVariants} className="letter"> S </motion.div>
-                <motion.div variants={letterVariants} className="letter space"> C </motion.div>
-            </div>
-
-            <div className="letterContainer">
                 <motion.div variants={letterVariants} className="letter "> M </motion.div>
                 <motion.div variants={letterVariants} className="letter space"> S </motion.div>
             </div>
@@ -32,7 +15,29 @@ function thirdContent({ wordVariants, letterVariants }) {
                 <motion.div variants={letterVariants} className="letter"> s </motion.div>
                 <motion.div variants={letterVariants} className="letter"> t </motion.div>
                 <motion.div variants={letterVariants} className="letter"> r </motion.div>
-                <motion.div variants={letterVariants} className="letter space"> o </motion.div>
+                <motion.div variants={letterVariants} className="letter"> o </motion.div>
+                <motion.div variants={letterVariants} className="letter"> n </motion.div>
+                <motion.div variants={letterVariants} className="letter"> a </motion.div>
+                <motion.div variants={letterVariants} className="letter"> u </motion.div>
+                <motion.div variants={letterVariants} className="letter"> t </motion.div>
+                <motion.div variants={letterVariants} className="letter"> i </motion.div>
+                <motion.div variants={letterVariants} className="letter"> c </motion.div>
+                <motion.div variants={letterVariants} className="letter"> a </motion.div>
+                <motion.div variants={letterVariants} className="letter space"> l </motion.div>
+            </div>
+
+            <div className="letterContainer">
+                <motion.div variants={letterVariants} className="letter"> E </motion.div>
+                <motion.div variants={letterVariants} className="letter"> n </motion.div>
+                <motion.div variants={letterVariants} className="letter"> g </motion.div>
+                <motion.div variants={letterVariants} className="letter"> i </motion.div>
+                <motion.div variants={letterVariants} className="letter"> n </motion.div>
+                <motion.div variants={letterVariants} className="letter"> e </motion.div>
+                <motion.div variants={letterVariants} className="letter"> e </motion.div>
+                <motion.div variants={letterVariants} className="letter"> r </motion.div>
+                <motion.div variants={letterVariants} className="letter"> i </motion.div>
+                <motion.div variants={letterVariants} className="letter"> n </motion.div>
+                <motion.div variants={letterVariants} className="letter space"> g </motion.div>
             </div>
 
         </motion.div>
