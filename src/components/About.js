@@ -30,8 +30,9 @@ function About({ currPath, randRGB, randRGBgenerator, randRGBReset }) {
                         </p>    
 
                         <p style={para}>
-                            I earned my Masters in Astronautical Engineering from the University of Southern California, specializing in Guidance, 
-                            Navigation, and Control systems.
+                            I graduated with a Masters in Astronautical Engineering from the University of Southern California, specializing in Guidance, 
+                            Navigation, and Control systems. During my time here, I worked on developing a testbed system for rendezvous proximity operations 
+                            and docking (RPOD) applications.
                         </p>
 
                         <p style={para}>     
@@ -40,8 +41,7 @@ function About({ currPath, randRGB, randRGBgenerator, randRGBReset }) {
                         </p>            
 
                         <p style={para}>
-                            The projects I enjoy most combine multiple disciplines, where I get to create autonomous and robotic systems that push 
-                            the boundaries of technology.
+                            The projects I enjoy most combine multiple disciplines, where I get to build systems that push the boundaries of technology.
                         </p>
 
                         <br/>
